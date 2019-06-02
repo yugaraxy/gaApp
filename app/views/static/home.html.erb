@@ -1,0 +1,28 @@
+<h1 style="color:white;">覚えられない単語を追加</h1>
+<%= form_for(@qa, url: qas_path, method: :post) do |f| %>
+	<div class="form-group">
+		<%= f.label "英語", :class => 'form-label' %><br />
+		<%= f.text_field :eng, :class => 'form-field' %>
+	</div>
+
+	<div class="form-group">
+		<%= f.label "日本語", :class => 'form-label' %><br />
+		<%= f.text_field :japa, :class => 'form-field' %>
+	</div>
+
+	<div class="form-group">
+		<%= f.label "例文", :class => 'form-label' %><br />
+		<%= f.text_area :senten, :maxlength => 120, :cols => 75, :rows => 4, :class => 'form-field' %>
+	</div>
+
+	<div class="form-group">
+		<button type="submit" class="form-field">新しい単語を追加する</button>
+	</div>
+<% end %>
+
+<br />
+<% @questions.each do |question| %>
+	<div class="question-tag">
+	 <div><%= question.eng.to_s + ' ' + question.japa.to_s %></div>
+	</div>
+<% end %>

@@ -1,0 +1,15 @@
+current directory: /Users/mac/environment/rubyFiles/QAapp/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+/Users/mac/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190603-27165-12l4su0.rb extconf.rb
+creating Makefile
+
+current directory: /Users/mac/environment/rubyFiles/QAapp/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/mac/environment/rubyFiles/QAapp/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/cruby.bundle
+
+current directory: /Users/mac/environment/rubyFiles/QAapp/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20190603-27165-1aruki7/skiptrace
