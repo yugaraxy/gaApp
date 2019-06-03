@@ -11,12 +11,20 @@ class QasController < ApplicationController
 	end
 
 	def destroy
+		@question = Qa.find(params[:id])
+		@question.destroy
+		redirect_to '/'
 	end
 
 	def edit
 	end
 
 	def show
+		@question = Qa.find(params[:id])
+	end
+
+	def quis
+		@question = Qa.find(Qa.pluck(:id).sample)
 	end
 
 	private

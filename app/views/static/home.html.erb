@@ -1,4 +1,7 @@
 <h1 style="color:white;">覚えられない単語を追加</h1>
+<%= link_to 'クイズ', '/quis' %>
+
+
 <%= form_for(@qa, url: qas_path, method: :post) do |f| %>
 	<div class="form-group">
 		<%= f.label "英語", :class => 'form-label' %><br />
@@ -22,7 +25,6 @@
 
 <br />
 <% @questions.each do |question| %>
-	<div class="question-tag">
-	 <div><%= question.eng.to_s + ' ' + question.japa.to_s %></div>
-	</div>
+		<% tag_string = question.eng.to_s + ' ' + question.japa.to_s %>
+		<%= link_to tag_string, question, :class => "question-tag" %>
 <% end %>

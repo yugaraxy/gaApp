@@ -1,0 +1,7 @@
+<div style="color:white;">
+	<%= @question.eng.to_s %><br />
+	<%= @question.japa.to_s %><br />
+	<%= @question.senten.to_s %><br />
+	<%= link_to '覚えたぞ！', @question, method: :delete, :class => 'qa_links' %><br />
+	<%= link_to '戻る', '/', :class => 'qa_links' %>
+</div>

@@ -45,4 +45,23 @@ body {
 	border-radius: 20px;
 	background-color: white;
 	text-align: center;
+	text-decoration: none;
+	&:hover {
+		color: black;
+	}
+ }
+
+ .qa_links {
+ 	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 20px;
+	text-align: center;
+	text-decoration: none;
+	background-color: white;
+	color: blue;
+	&:hover{
+		color: black;
+	}
  }
